@@ -20,12 +20,10 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?int $id = null;
 
     #[ORM\Column(length: 50, nullable: true)]
-    #[Assert\NotBlank()]
     #[Assert\Length(min: 2, max: 50)]
     private ?string $fullName = null;
 
     #[ORM\Column(length: 50, nullable: true)]
-    #[Assert\NotBlank()]
     #[Assert\Length(min: 2, max: 50)]
     private ?string $pseudo = null;
 
