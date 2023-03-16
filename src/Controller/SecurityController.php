@@ -12,7 +12,7 @@ class SecurityController extends AbstractController
     public function login(): Response
     {
         return $this->render('pages/security/login.html.twig', [
-            'controller_name' => 'SecurityController',
         ]);
     }
 }
+ 
